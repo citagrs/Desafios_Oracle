@@ -3,24 +3,27 @@
 <head>
     <meta charset="utf-8">
     <title>Encriptador de código secreto</title>
+    <link rel="stylesheet" type="text/css" href="media.css"/>
 </head>
 <body>
 
-    <h1>Encriptador/Desencriptador</h1>
+    <div id="caja1">
 
-    <form id="formulario">
+    <h1>Encriptador Desencriptador</h1>
+    <br><br>
 
-        <input type="text" id="primero" placeholder="Ingrese el texto aquí" size="35">
-        <br><br>
-        <button type="button" id="butEncrip" onclick="encriptar(texton.value);">Encriptar</button>
-        <button type="button" id="butDesencrip" onclick="desencriptar(texton.value);">Desencriptar</button>
-        <br><br>
-        <h2 id="textoFinal">Resultado final</h2>
-        <button onclick="copiando(mensajefinal);">Copiar</button>
-        <br><br>
+    <input class="textbox" type="text" id="primero" placeholder="Ingrese el texto aquí" size="35">
+    <br><br>
+    <button class="botones1" type="button" id="butEncrip" onclick="encriptar(texton.value);">Encriptar</button>
+    <button class="botones1" type="button" id="butDesencrip" onclick="desencriptar(texton.value);">Desencriptar</button>
+    <br><br>
+    <h2 id="textoFinal">Resultado final</h2>
+    <br><br>
+    <button class="botones2" onclick="copiando(mensajefinal);">Copiar</button>
+    <br><br>
 
         
-    </form>
+    </div>
 
     <script>
         var texton = document.getElementById("primero");
