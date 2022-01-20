@@ -1,5 +1,10 @@
-body {
-    background-image: url("media/azul.jpg") ;
+html {
+    background-image: url("media/azul.jpg");
+    background: no-repeat;
+    background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
     margin: 0;
     font-family: Arial, Verdana;
 
