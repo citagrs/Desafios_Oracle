@@ -1,12 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
 html {
     background-image: url("media/azul.jpg");
-    background: no-repeat;
     background-size: cover;
         -moz-background-size: cover;
         -webkit-background-size: cover;
         -o-background-size: cover;
     margin: 0;
     font-family: Arial, Verdana;
+    height: 100%;
 
 }
 #caja1 {
@@ -58,14 +62,14 @@ h2 {
     border-style: solid;
     border-radius: 8px;
 }
-h5 {
+.footer {
     color: #909499;
     border-color: #909499;
     background: rgba(5, 7, 12, 0.685);
-    position: relative;
-    top: 900px;
-
-
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
 }
 .textbox
   {
