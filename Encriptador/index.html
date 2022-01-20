@@ -8,16 +8,24 @@
 
     <h1>Encriptador/Desencriptador</h1>
 
-    <input type="text" id="primero" placeholder="Ingrese el texto aqui" size="35">
-    <br><br>
-    <button type="button" id="butEncrip">Encriptar</button>
-    <button type="button" id="butDesencrip">Desencriptar</button>
-    <br><br>
-    <h2 id="textoFinal">Resultado final</h2>
-    <button>Copiar</button>
-    <br><br>
+    <form id="formulario">
+
+        <input type="text" id="primero" placeholder="Ingrese el texto aquí" size="35">
+        <br><br>
+        <button type="button" id="butEncrip" onclick="encriptar(texton.value);">Encriptar</button>
+        <button type="button" id="butDesencrip" onclick="desencriptar(texton.value);">Desencriptar</button>
+        <br><br>
+        <h2 id="textoFinal">Resultado final</h2>
+        <button>Copiar</button>
+        <br><br>
+
+        
+    </form>
 
     <script>
+
+        var texton = document.getElementById("primero");
+        texton.focus;
 
         function encriptar(texto){
             var cadena = [];
@@ -37,7 +45,7 @@
                 }
             }
             var textoEncriptado = cadena.toString().replace(/,/g,"");
-            return textoEncriptado;
+            document.getElementById("textoFinal").innerHTML = textoEncriptado;
         }
 
         function desencriptar(texto){
@@ -66,29 +74,8 @@
                 }
             }
             var cadenaDesencriptada = textoDesencriptado.toString().replace(/,/g,"");
-            return cadenaDesencriptada;
+            document.getElementById("textoFinal").innerHTML = cadenaDesencriptada;
         }
-            
-        function cambiar (){
-            document.getElementById("textoFinal").innerHTML = encriptar(texton);
-        }
-
-        function cambiardos(){
-            document.getElementById("textoFinal").innerHTML = desencriptar(texton);
-        }
-
-        document.getElementById("butEncrip").onclick = function(){
-            cambiar();
-        };
-
-        document.getElementById("butDesencrip").onclick = function(){
-            cambiardos();
-        }
-        
-
-        document.getElementById("primero").focus();
-        var texton = document.getElementById("primero").value;
-        
     </script>
 
     <h6>Esta pagina fue realizada por <a href="http://www.linkedin.com/in/b1cita">Oscar Cita</a></h6>
