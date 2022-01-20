@@ -16,7 +16,7 @@
         <button type="button" id="butDesencrip" onclick="desencriptar(texton.value);">Desencriptar</button>
         <br><br>
         <h2 id="textoFinal">Resultado final</h2>
-        <button>Copiar</button>
+        <button onclick="copiando(mensajefinal);">Copiar</button>
         <br><br>
 
         
@@ -26,6 +26,29 @@
 
         var texton = document.getElementById("primero");
         texton.focus;
+        var mensajefinal="";
+
+        function copiando(textos){
+            let areaTexto = document.createElement("textarea");
+            areaTexto.value = textos;
+            areaTexto.setAttribute('readonly', "");
+            areaTexto.style.height = "0px";
+
+            document.body.appendChild(areaTexto);
+
+            let seleccionado = document.getSelection().rangeCount > 0 ? document.getSelection().getRangeAt(0) : false;
+
+            areaTexto.select();
+
+            document.execCommand('copy');
+
+            document.body.removeChild(areaTexto);
+
+            if (seleccionado){
+                document.getSelection().removeAllRanges();
+                document.getSelection().addRange(seleccionado);
+            }
+        }
 
         function encriptar(texto){
             var cadena = [];
@@ -46,6 +69,7 @@
             }
             var textoEncriptado = cadena.toString().replace(/,/g,"");
             document.getElementById("textoFinal").innerHTML = textoEncriptado;
+            mensajefinal=textoEncriptado;
         }
 
         function desencriptar(texto){
@@ -75,6 +99,7 @@
             }
             var cadenaDesencriptada = textoDesencriptado.toString().replace(/,/g,"");
             document.getElementById("textoFinal").innerHTML = cadenaDesencriptada;
+            mensajefinal=cadenaDesencriptada;
         }
     </script>
 
