@@ -1,0 +1,12 @@
+.mensaje{
+    background-color: black;
+    border-radius: 6px;
+    padding: 0.5rem;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+.titulo__segundo {
+    color: #909499;
+    border-color: #909499;
+    border-style: solid;
+}

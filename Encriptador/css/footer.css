@@ -1,0 +1,41 @@
+.footer {
+    background-color: rgb(32, 58, 58);
+    display: flow-root;
+    text-align: center;
+  }
+  .footer__imagenes div {
+    align-items: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .footer__imagen img {
+    filter: invert(0.9);
+    transition: 0.5s all;
+    width: 35px;
+    margin: 0 10px 0 10px;
+  }
+  footer img:hover {
+    filter: invert(3);
+    transform: scale(1.1);
+  }
+  .footer__parrafo {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer{
+      width: 100%;
+    }
+    .footer__imagen img{
+      margin: 0 30px 0 30px;
+      width: 3rem;
+    }
+    .footer__parrafo{
+      font-size: 1rem;
+    }
+  }

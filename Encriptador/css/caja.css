@@ -1,0 +1,17 @@
+.caja1 {
+  width: 35vw;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: rgba(5, 7, 12, 0.685);
+  border-radius: 15px;
+}
+@media screen and (max-width: 480px) {
+    .caja1{
+        width: 90vw;
+    }
+}

@@ -1,0 +1,22 @@
+.caja1__input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.textbox{
+    width:90%;
+    border: 1px solid #DBE1EB;
+    font-size: 18px;
+    font-family: Arial, Verdana;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    background: #FFFFFF;
+    background: linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+    background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+    color: #2E3133;
+  }

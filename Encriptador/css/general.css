@@ -1,0 +1,14 @@
+body {
+  background-image: url("../media/azul.jpg");
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  font-family: Arial, Verdana;
+}
+.seccion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}

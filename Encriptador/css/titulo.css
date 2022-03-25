@@ -1,0 +1,13 @@
+.titulo__principal {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #dbe2e9;
+  text-shadow: 3px 3px 1px rgb(15, 71, 34);
+  text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .titulo__principal {
+    font-size: 4rem;
+  }
+}
